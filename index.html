@@ -31,13 +31,15 @@
         var jokes = document.getElementById('jokes');
         var jokeBtn = document.getElementById('btn');
 
-        var setHeader = {
+        function genrateJoke(){ 
+
+
+          var setHeader = {
             headers:{
                 Accept : 'application/json'
             }
         }
 
-        function genrateJoke(){ 
             fetch('https://icanhazdadjoke.com', setHeader)
             .then((res) => res.json())
 
